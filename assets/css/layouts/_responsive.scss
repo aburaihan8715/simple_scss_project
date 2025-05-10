@@ -1,0 +1,225 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+  .header_area {
+    .menu {
+      width: 677px;
+    }
+  }
+  // about
+  .single_about {
+    width: 303px;
+  }
+  // services
+  .single_service {
+    width: 303px;
+    height: 300px;
+  }
+  // portfolio
+  .single_portfolio {
+    width: 303px;
+  }
+  // blogs
+  .single_blog {
+    width: 303px;
+  }
+
+  // contact area
+  .single_address {
+    width: 303px;
+  }
+  .contact_form {
+    width: 491px;
+  }
+
+  .contact_map {
+    width: 449px;
+  }
+}
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 740px;
+  }
+
+  .header_area {
+    .logo {
+      width: 100%;
+      margin-right: 0;
+      text-align: center;
+    }
+    .menu {
+      width: 100%;
+      ul {
+        text-align: center;
+      }
+    }
+  }
+
+  // about
+  .single_about {
+    width: 355px;
+    margin-bottom: 30px;
+    &:nth-child(2) {
+      margin-right: 0;
+    }
+  }
+
+  // services
+  .single_service {
+    width: 355px;
+
+    &:nth-child(2),
+    &:nth-child(4) {
+      margin-right: 0;
+    }
+    &:nth-child(3) {
+      margin-right: 30px;
+    }
+  }
+
+  // portfolio
+  .single_portfolio {
+    width: 355px;
+
+    &:nth-child(2),
+    &:nth-child(4) {
+      margin-right: 0;
+    }
+    &:nth-child(3) {
+      margin-right: 30px;
+    }
+  }
+
+  // blogs
+  .single_blog {
+    width: 355px;
+    margin-bottom: 30px;
+    &:nth-child(2) {
+      margin-right: 0;
+    }
+  }
+
+  // contact area
+  .single_address {
+    width: 226px;
+  }
+
+  .contact_form {
+    width: 350px;
+  }
+
+  .contact_map {
+    width: 360px;
+  }
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 300px;
+  }
+
+  // services
+  .section_title {
+    h2 {
+      font-size: 36px;
+    }
+  }
+
+  .header_area {
+    .logo {
+      width: 100%;
+      margin-right: 0;
+      text-align: center;
+    }
+    .menu {
+      width: 100%;
+      ul {
+        text-align: center;
+
+        li {
+          display: block;
+          margin-left: 0;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .banner_content {
+    h1 {
+      font-size: 22px;
+    }
+    p {
+      max-width: 99%;
+      margin: 14px auto;
+      font-size: 14px;
+    }
+
+    a {
+      margin: 10px 0px;
+      width: 100%;
+    }
+  }
+
+  // about
+  .single_about {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+
+  .single_service {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  // portfolio
+  .single_portfolio {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  // cta
+  .cta_content {
+    h2 {
+      font-size: 30px;
+    }
+  }
+
+  // blogs
+  .single_blog {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  // contact area
+  .single_address {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .contact_form {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .contact_map {
+    width: 100%;
+  }
+}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 450px;
+  }
+}
+
+// ==========end==========
