@@ -1,5 +1,25 @@
 .header_area {
   padding: 20px 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.3s;
+  &.sticky {
+    background: #fefefe;
+    border-bottom: 1px solid lightgray;
+    .logo {
+      a {
+        color: #333;
+      }
+    }
+    .menu {
+      a {
+        color: #333;
+      }
+    }
+  }
 
   .logo {
     width: 263px;
@@ -9,7 +29,7 @@
     a {
       font-size: 22px;
       font-weight: 700;
-      color: $black;
+      color: $white;
       display: inline-block;
       text-transform: uppercase;
     }
@@ -21,20 +41,20 @@
 
     ul {
       text-align: right;
+    }
+    li {
+      display: inline-block;
+      margin-left: 30px;
+    }
 
-      li {
-        display: inline-block;
-        margin-left: 30px;
+    a {
+      font-size: 18px;
+      font-weight: 500;
+      text-transform: capitalize;
+      color: $white;
 
-        a {
-          font-size: 18px;
-          font-weight: 500;
-          text-transform: capitalize;
-
-          &:hover {
-            color: $primary_color;
-          }
-        }
+      &:hover {
+        color: $primary_color;
       }
     }
   }

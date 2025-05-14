@@ -306,6 +306,22 @@ body {
 
 .header_area {
   padding: 20px 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.3s;
+}
+.header_area.sticky {
+  background: #fefefe;
+  border-bottom: 1px solid lightgray;
+}
+.header_area.sticky .logo a {
+  color: #333;
+}
+.header_area.sticky .menu a {
+  color: #333;
 }
 .header_area .logo {
   width: 263px;
@@ -315,7 +331,7 @@ body {
 .header_area .logo a {
   font-size: 22px;
   font-weight: 700;
-  color: #333;
+  color: #fff;
   display: inline-block;
   text-transform: uppercase;
 }
@@ -326,16 +342,17 @@ body {
 .header_area .menu ul {
   text-align: right;
 }
-.header_area .menu ul li {
+.header_area .menu li {
   display: inline-block;
   margin-left: 30px;
 }
-.header_area .menu ul li a {
+.header_area .menu a {
   font-size: 18px;
   font-weight: 500;
   text-transform: capitalize;
+  color: #fff;
 }
-.header_area .menu ul li a:hover {
+.header_area .menu a:hover {
   color: #ff7720;
 }
 
