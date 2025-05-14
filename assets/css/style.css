@@ -346,6 +346,9 @@ body {
   display: inline-block;
   margin-left: 30px;
 }
+.header_area .menu li.active a {
+  color: #ff7720;
+}
 .header_area .menu a {
   font-size: 18px;
   font-weight: 500;
@@ -354,6 +357,10 @@ body {
 }
 .header_area .menu a:hover {
   color: #ff7720;
+}
+
+.banner_area {
+  padding: 150px 0;
 }
 
 .banner_content {

@@ -45,6 +45,11 @@
     li {
       display: inline-block;
       margin-left: 30px;
+      &.active {
+        a {
+          color: $primary_color;
+        }
+      }
     }
 
     a {
