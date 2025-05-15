@@ -374,6 +374,9 @@
       <p class="test text-center">&copy; 2021 All Rights Reserved.</p>
     </footer>
 
+    <!-- seroll top button -->
+    <button class="scroll_top" id="scroll_top">&uarr;</button>
+
     <!-- jquery js -->
     <script src="assets/js/jquery.min.js"></script>
     <!-- onepage nav js -->
@@ -389,12 +392,24 @@
         } else {
           $('.header_area').removeClass('sticky');
         }
+
+        // scroll top show/hide
+        if (scrollTop > 300) {
+          $('#scroll_top').addClass('scroll_top');
+        } else {
+          $('#scroll_top').removeClass('scroll_top');
+        }
       });
 
       // one page navigation
       $(document).ready(function () {
         $('#nav').onePageNav({
           currentClass: 'active',
+        });
+
+        // scroll top click event - bind once
+        $('#scroll_top').click(function () {
+          $('html, body').animate({ scrollTop: 0 }, 500);
         });
       });
     </script>
